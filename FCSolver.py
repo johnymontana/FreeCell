@@ -52,9 +52,21 @@ class Problem(object):
 		foundations = self.deepish_copy(a_node.foundations)
 		freeCells = self.deepish_copy(a_node.freeCells)
 		cascades = self.deepish_copy(a_node.cascades)
-		
+	#get tmp card:	
 		#if action[0][0] == 'C':
-			# get card @ action 	
+			# tmpCard =  cascades[action[0][1]].pop()
+		#if action[0][0] == 'R':
+			# tmpCard = freeCells[action[0][1]].pop()		
+		
+	#put tmp card:
+		# if action[1][0] == 'F':
+			# foundations[action[1][1]].append()
+		# if action[1][0] == 'R':
+			# freeCells[action[1][1]].append()
+		# if action[1][0] == 'C':
+			# cascades[action[1][1]].append()
+
+
 
 
 
